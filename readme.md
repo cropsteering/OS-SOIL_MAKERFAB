@@ -12,3 +12,17 @@
 2. This allows for use on Helium and PlatformIO
 3. Also added Debug button when held will send LoRaWAN packet or LoRaWAN join
 4. Added better LoRaWAN join logic so it doesn't join everytime it tries to uplink
+
+```
+function Decoder(bytes, port, uplink_info) {
+  var decoded = {};
+  
+  decoded.temp = bytes[0];
+  decoded.humi = bytes[1];
+  decoded.adc = bytes[2];
+  decoded.bat = bytes[3];
+  decoded.num = bytes[4] * 100 + bytes[5];
+  
+  return decoded;
+}
+```
