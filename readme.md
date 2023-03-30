@@ -33,7 +33,8 @@ You can see ADC output when you connect your Makerfabs LoRaWAN sensor to a seria
 
 ## Helium Decoder
 ```
-function Decoder(bytes, port, uplink_info) {
+function Decoder(bytes, port, uplink_info) 
+{
   var decoded = {};
   
   decoded.temp = bytes[0];
