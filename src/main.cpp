@@ -224,7 +224,7 @@ void read_sensor()
     bat_adc /= 3;
 
     // soil_adc = analogRead(A2);
-    soil_percent = (int)((soil_adc - SOIL_ADC_WATER) / SOIL_ADC_UNIT);
+    soil_percent = (int)((soil_adc - SOIL_ADC_AIR) / SOIL_ADC_UNIT);
 
     // bat_adc = analogRead(A3);
     bat_vol = (int)(bat_adc * 690.0 / 470.0 * 3300.0 / 1024.0);

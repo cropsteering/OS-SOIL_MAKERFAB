@@ -12,12 +12,13 @@
 
 #define DEBUG_OUT_ENABLE 1
 
-#define SOIL_ADC_WATER 550
-#define SOIL_ADC_AIR 660
-#define SOIL_ADC_UNIT ((SOIL_ADC_AIR - SOIL_ADC_WATER) / 100.0)
+#define SOIL_ADC_WATER 694
+#define SOIL_ADC_AIR 753
+#define SOIL_ADC_UNIT ((SOIL_ADC_WATER - SOIL_ADC_AIR) / 100.0)
 
 #define AT_TIMEOUT 3000
 
+// User must fill out
 #define DEVEUI ""
 #define APPEUI ""
 #define APPKEY ""
