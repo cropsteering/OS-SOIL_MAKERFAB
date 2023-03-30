@@ -7,8 +7,8 @@
  /_/    \_\ .__/| .__/|_|\___| |_|   \__,_|\___|_|\_\___|_|  |___/
           | |   | |                                               
           |_|   |_|                                               
-## About
 ```
+## About
 1. Custom version of the Makerfabs firmware for the LoRaWAN Soil Sensor. 
 2. This allows for use on Helium and PlatformIO
 3. Also added Debug button when held will send LoRaWAN packet or LoRaWAN join
