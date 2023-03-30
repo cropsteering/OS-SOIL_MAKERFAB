@@ -40,7 +40,7 @@ function Decoder(bytes, port, uplink_info)
   decoded.temp = bytes[0];
   decoded.humi = bytes[1];
   decoded.soil = bytes[2];
-  decoded.bat = bytes[3];
+  decoded.bat = bytes[3] / 10;
   decoded.tx = bytes[4] * 100 + bytes[5];
   
   return decoded;
