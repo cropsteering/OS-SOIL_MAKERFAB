@@ -38,6 +38,7 @@ function Decoder(bytes, port, uplink_info)
   var decoded = {};
   
   decoded.temp = bytes[0];
+  decoded.temp_f = (bytes[0] * 1.8) + 32;
   decoded.humi = bytes[1];
   decoded.soil = bytes[2];
   decoded.bat = bytes[3] / 10;
