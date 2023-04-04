@@ -24,7 +24,7 @@ Make sure to fill out the following in config.h
 You can generate these from your LNS of choice
 
 ## Calibrate soil sensor
-You want to do some debugging, I pushed the numbers that work for me in my location, Canada. You want to test these by triggering an uplink multiple times with the probe in water and out. Take note of the number that seems to be stable. Adjust these numbers in config.h
+You want to do some debugging, I pushed the numbers that work for me in my location, Canada. You want to test these by triggering an uplink multiple times with the probe in water and out while connected to serial console. Take note of the number that seems to be stable. Adjust these numbers in config.h
 ```
 #define SOIL_ADC_WATER 694
 #define SOIL_ADC_AIR 753
