@@ -20,6 +20,7 @@ Make sure to fill out the following in config.h
 #define DEVEUI ""
 #define APPEUI ""
 #define APPKEY ""
+#define MASK ""
 ```
 You can generate these from your LNS of choice
 
