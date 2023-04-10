@@ -323,7 +323,7 @@ void lorawan_init()
 
     sendData("AT+CCLASS=0", AT_TIMEOUT);
     sendData("AT+CJOINMODE=0", AT_TIMEOUT);
-    sendData("AT+CFREQBANDMASK=0002", AT_TIMEOUT);
+    sendData(MASK, AT_TIMEOUT);
 }
 
 int lorawan_join()

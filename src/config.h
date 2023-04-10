@@ -22,6 +22,8 @@
 #define DEVEUI ""
 #define APPEUI ""
 #define APPKEY ""
+// Example AT+CFREQBANDMASK=0002 for US915
+#define MASK ""
 
 #define SLEEP_CYCLE 450
 
