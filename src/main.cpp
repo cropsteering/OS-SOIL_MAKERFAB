@@ -246,7 +246,7 @@ void sendData(String command, const int timeout)
     log_out(command.c_str());
     lorawan_serial.println(command); // send the read character to the Serial
 
-    long int time = millis();
+    unsigned long int time = millis();
 
     while ((time + timeout) > millis())
     {
@@ -276,7 +276,7 @@ int sendData_keyword(String command, const int timeout, String keyword)
     log_out(command.c_str());
     lorawan_serial.println(command); // send the read character to the Serial
 
-    long int time = millis();
+    unsigned long int time = millis();
 
     while ((time + timeout) > millis())
     {
@@ -323,7 +323,8 @@ void lorawan_init()
 
     sendData("AT+CCLASS=0", AT_TIMEOUT);
     sendData("AT+CJOINMODE=0", AT_TIMEOUT);
-    sendData("AT+CFREQBANDMASK=0002", AT_TIMEOUT);
+    sendData("AT+CCONFIRM=1", AT_TIMEOUT);
+    sendData(MASK, AT_TIMEOUT);
 }
 
 int lorawan_join()

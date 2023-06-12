@@ -22,8 +22,11 @@
 #define DEVEUI ""
 #define APPEUI ""
 #define APPKEY ""
+// Example AT+CFREQBANDMASK=0002 for US915
+#define MASK ""
 
-#define SLEEP_CYCLE 450
+#define SLEEP_MIN 60
+#define SLEEP_CYCLE SLEEP_MIN*7.5
 
 // LAZY FORWARD DECLARATION
 void log_init();
