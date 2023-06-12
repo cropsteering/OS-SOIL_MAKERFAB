@@ -321,6 +321,7 @@ void lorawan_init()
     sprintf(cmd, "%s%s", "AT+CAPPKEY=", APPKEY);
     sendData(cmd, AT_TIMEOUT);
 
+    sendData("AT+CCONFIRM=1", AT_TIMEOUT);
     sendData("AT+CCLASS=0", AT_TIMEOUT);
     sendData("AT+CJOINMODE=0", AT_TIMEOUT);
     sendData("AT+CCONFIRM=1", AT_TIMEOUT);
